@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kazi's Neighborhood</title>
+    <link rel="stylesheet" href="sketch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dropdown">
+        <h1><button class="dropbtn"><img src = "images/dropdown.png"> </button> Welcome to Kazi's Neighborhood!</h1>        
+        <div class="dropdown-content">
+          <a href="#about">Go to my About!</a>
+          <a href="#projects">Go Look at some of my Work!</a>
+          <a href="https://www.instagram.com/kazi_mansha/?hl=en" target="_blank">Go Follow me on Instagram!</a>
+          <a href="https://www.facebook.com/kazi.mansha.73/" target="_blank">Go Friend me on Facebook!</a>
+        </div>
+        <center><p> Hopefully you enjoy your stay!</p></center>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="images/Kazi_Mansha_Picture1.jpg" style="width:100%" style="height: 200px;">
+        </div>
+      
+        <div class="mySlides">
+          <img src="images/Kazi_Mansha_Picture2.jpg" style="width:100%" style="height: 500px;">
+        </div>
+      
+        <div class="mySlides">
+          <img src="images/Kazi_Mansha_Picture3.jpg" style="width:100%" style="height: 500px;">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+        <script>
+        var slide = 1;
+        showSlides(slide);
+        
+        function plusSlides(n) {
+          showSlides(slide += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slide = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slide = 1}    
+          if (n < 1) {slide = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slide-1].style.display = "block";  
+        }
+        </script>
+      <br>
+    <div id = "about">
+        <h1><strong>About:</strong></h1>
+        <p>You can learn more about me here!</p>
+    </div>
+        <p>Hello world! My name is Kazi Mansha and I am from Queens, New York! I have a loving family that includes my mom, my dad, my sister, and me. I am 17 years old and a rising senior in Stuyvesant High School located in New York. Although I don't know my major yet, I am deciding on either being a Computer Scientist or a Forensics Scientist.</p>
+        <p>My favorite hobbies include:
+            <br> 
+            <ul>
+                <li>Watching Anime 
+                    <ul>
+                        <li>Some of my favorites are Akame Ga Kill, Rising of the Shield Hero, and My Hero Acadamia!</li>
+                    </ul>
+                </li>
+                <li>Playing Sports
+                    <ul>
+                        <li>I really like to play Basketball, Football, and Soccer (Or Football depending on what you prefer)</li>
+                    </ul>
+                </li>
+                <li>Playing Video Games
+                    <ul>
+                        <li>I love to play League of Legends, Dead by Daylight, and a number of story games (If you ever need a recommendation come to me)</li>
+                    </ul>
+                </li>
+                <li>Singing (I won't sing if you ask me to)</li>
+            </ul>
+        </p>
+    </div>
+    <div class="project">
+        <div id = "projects">
+            <h1><strong>Projects:</strong></h1>
+        <p>Here are some of my All Star Code Works!</p>
+        </div>
+        <center><img src="images/project_picture1.PNG"></center>
+       <p><a href="projects1/index.html" target="_blank">Here is a bouncing DvD logo that I created! (See if it will hit the corners!)</a></p>
+       <center><img src="images/project_picture2.PNG"></center>
+       <p><a href="projects2/index.html" target="_blank">Here is the MVP for a website that I was trying to copy the design for! (Work in Progress)</a></p>
+       <center><img src="images/project_picture3_part1.PNG"></center>
+       <p><a href="projects3/index.html" target="_blank">Here is me attempting to fix the layout of a previously created website! (Work in Progress)</a></p>
+    </div>
+</body>

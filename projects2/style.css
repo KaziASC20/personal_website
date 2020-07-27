@@ -1,0 +1,38 @@
+div.top_area p {
+    font-size: 24px;
+    font-family: 'Bitter', serif;
+    margin: 20px;
+}
+
+div.top_text p {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.055em;
+    text-align: center;
+}
+
+div.under_top_text p {
+    color: white;
+    font-size: 20px;
+    text-align: center
+}
+div.under_top_text p {
+    border-color: black;
+    border-style: solid;
+    border-radius: 16px;
+    background: black;
+    border-width: 20px;
+}
+
+div.first_picture {
+    text-align: center;
+}
+div.first_picture img {
+    width: 1200px;
+    height: 800px;
+}
+
+div.under_picture_text p {
+    
+}
